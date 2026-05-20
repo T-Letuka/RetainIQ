@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"></head>
+<body style="margin:0; padding:0; background:#f4f4f4; font-family:Arial, sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4; padding:30px 0;">
+<tr><td align="center">
+<table width="620" cellpadding="0" cellspacing="0"
+       style="background:#fff; border-radius:8px; overflow:hidden;
+              box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+    <!-- HEADER -->
+    <tr>
+        <td style="background:#1D3557; padding:28px 32px;">
+            <h1 style="margin:0; color:#fff; font-size:22px; letter-spacing:1px;">
+                 RetainIQ
+            </h1>
+            <p style="margin:6px 0 0; color:#a8c4d8; font-size:13px;">
+                Weekly Churn Risk Report &nbsp;·&nbsp; {{ snapshot_date }}
+            </p>
+        </td>
+    </tr>
+
+    <!-- PIPELINE STATUS -->
+    <tr>
+        <td style="padding:20px 32px 0;">
+            <p style="margin:0; color:#444; font-size:14px;">
+                 Pipeline ran successfully &nbsp;·&nbsp;
+                <strong>{{ total_customers|int }}</strong> customers scored &nbsp;·&nbsp;
+                Model: <strong>{{ winner }}</strong> (AUC: {{ "%.3f"|format(winner_auc) }})
+            </p>
+        </td>
+    </tr>
+
+    <!-- RISK SUMMARY CARDS -->
+    <tr>
+        <td style="padding:24px 32px 0;">
+            <h2 style="margin:0 0 16px; font-size:15px; color:#1D3557;
+                        border-bottom:2px solid #1D3557; padding-bottom:8px;">
+                Risk Summary
+            </h2>
+            <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="32%" style="background:#fff5f5; border-left:4px solid #E63946;
+                            border-radius:4px; padding:16px 14px; text-align:center;">
+                    <div style="font-size:28px; font-weight:bold; color:#E63946;">{{ high_count }}</div>
+                    <div style="font-size:11px; color:#888; margin-top:4px; text-transform:uppercase;">High Risk</div>
+                    <div style="font-size:13px; color:#E63946; margin-top:4px;">{{ high_pct }}% of customers</div>
+                </td>
+                <td width="4%"></td>
+                <td width="32%" style="background:#fffbf0; border-left:4px solid #E9C46A;
+                            border-radius:4px; padding:16px 14px; text-align:center;">
+                    <div style="font-size:28px; font-weight:bold; color:#b8860b;">{{ medium_count }}</div>
+                    <div style="font-size:11px; color:#888; margin-top:4px; text-transform:uppercase;">Medium Risk</div>
+                    <div style="font-size:13px; color:#b8860b; margin-top:4px;">{{ medium_pct }}% of customers</div>
+                </td>
+                <td width="4%"></td>
+                <td width="32%" style="background:#f0faf8; border-left:4px solid #2A9D8F;
+                            border-radius:4px; padding:16px 14px; text-align:center;">
+                    <div style="font-size:28px; font-weight:bold; color:#2A9D8F;">{{ low_count }}</div>
+                    <div style="font-size:11px; color:#888; margin-top:4px; text-transform:uppercase;">Low Risk</div>
+                    <div style="font-size:13px; color:#2A9D8F; margin-top:4px;">{{ low_pct }}% of customers</div>
+                </td>
+            </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- THIS WEEK'S RECOMMENDATIONS -->
+    <tr>
+        <td style="padding:24px 32px 0;">
+            <h2 style="margin:0 0 12px; font-size:15px; color:#1D3557;
+                        border-bottom:2px solid #1D3557; padding-bottom:8px;">
+                This Week's Recommendations
+            </h2>
+
+            <!-- P1 — Priority Discount -->
+            <table width="100%" cellpadding="0" cellspacing="0"
+                   style="margin-bottom:10px; background:#fff5f5;
+                          border-left:4px solid #E63946; border-radius:4px; padding:14px 16px;">
+            <tr><td>
+                <p style="margin:0; font-size:13px; color:#333; line-height:1.6;">
+                     <strong>Priority Save — Act Before Wednesday</strong><br>
+                    {{ high_actions['Priority Discount — 25% off next order'] }}
+                    Gold and Silver tier customers are at high churn risk and have
+                    previously responded to promotions. Send them a
+                    <strong>25% discount push notification via the app</strong> this week.
+                    These are your highest value customers — act first.
+                </p>
+            </td></tr>
+            </table>
+
+            <!-- Standard Discount -->
+            <table width="100%" cellpadding="0" cellspacing="0"
+                   style="margin-bottom:10px; background:#fff9f0;
+                          border-left:4px solid #F4A261; border-radius:4px; padding:14px 16px;">
+            <tr><td>
+                <p style="margin:0; font-size:13px; color:#333; line-height:1.6;">
+                     <strong>Standard Discount Campaign</strong><br>
+                    {{ high_actions['Standard Discount — 15% off next order'] }}
+                    Bronze tier customers are at high risk and promo responsive.
+                    Send a <strong>15% off next order</strong> SMS or app notification.
+                    Top provinces: {{ high_province.keys()|list|join(', ') }}.
+                </p>
+            </td></tr>
+            </table>
+
+            <!-- Freebie -->
+            <table width="100%" cellpadding="0" cellspacing="0"
+                   style="margin-bottom:10px; background:#f0faf8;
+                          border-left:4px solid #2A9D8F; border-radius:4px; padding:14px 16px;">
+            <tr><td>
+                <p style="margin:0; font-size:13px; color:#333; line-height:1.6;">
+                     <strong>Freebie Re-engagement</strong><br>
+                    {{ high_actions['Freebie Offer — free item with next purchase'] }}
+                    high-risk customers have not responded to discounts historically.
+                    A <strong>free item with next purchase</strong> offer may break
+                    the pattern where discounts have not worked.
+                </p>
+            </td></tr>
+            </table>
+
+            <!-- Medium -->
+            <table width="100%" cellpadding="0" cellspacing="0"
+                   style="margin-bottom:10px; background:#f8f8f8;
+                          border-left:4px solid #888; border-radius:4px; padding:14px 16px;">
+            <tr><td>
+                <p style="margin:0; font-size:13px; color:#333; line-height:1.6;">
+                     <strong>Monitor — Medium Risk ({{ medium_count }} customers)</strong><br>
+                    These customers are showing early drift but have not yet reached
+                    the intervention threshold. No promo spend needed this week —
+                    flag for follow-up if they remain medium risk next week.
+                </p>
+            </td></tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- MODEL COMPARISON -->
+    <tr>
+        <td style="padding:24px 32px 0;">
+            <h2 style="margin:0 0 12px; font-size:15px; color:#1D3557;
+                        border-bottom:2px solid #1D3557; padding-bottom:8px;">
+                Model Performance
+            </h2>
+            <table width="100%" cellpadding="0" cellspacing="0"
+                   style="border:1px solid #eee; border-radius:4px; font-size:13px;">
+                <tr style="background:#f8f8f8;">
+                    <th style="padding:10px 12px; text-align:left;">Model</th>
+                    <th style="padding:10px 12px; text-align:center;">Test AUC</th>
+                    <th style="padding:10px 12px; text-align:center;">Status</th>
+                </tr>
+                <tr>
+                    <td style="padding:8px 12px; border-bottom:1px solid #eee;">XGBoost</td>
+                    <td style="padding:8px 12px; border-bottom:1px solid #eee; text-align:center;">{{ "%.4f"|format(xgb_auc) }}</td>
+                    <td style="padding:8px 12px; border-bottom:1px solid #eee; text-align:center;">
+                        {% if winner == 'XGBoost' %} Selected{% else %}—{% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 12px;">Logistic Regression</td>
+                    <td style="padding:8px 12px; text-align:center;">{{ "%.4f"|format(lr_auc) }}</td>
+                    <td style="padding:8px 12px; text-align:center;">
+                        {% if winner == 'Logistic Regression' %}✅ Selected{% else %}—{% endif %}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- FOOTER -->
+    <tr>
+        <td style="padding:28px 32px; border-top:1px solid #eee; margin-top:24px;">
+            <p style="margin:0; font-size:12px; color:#999;">
+                RetainIQ &nbsp;·&nbsp; Automated Churn Intelligence &nbsp;·&nbsp;
+                Full scored dataset attached as CSV.
+            </p>
+        </td>
+    </tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

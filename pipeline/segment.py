@@ -126,8 +126,8 @@ def build_segment_summary(actioned: pd.DataFrame, snapshot_date: str) -> dict:
         'high_responsive':     high_responsive,
         'high_not_responsive': high_not_responsive,
  
-        'p1_count':            (actioned['priority'] == 'P1 — Act This Week').sum(),
-        'p2_count':            (actioned['priority'] == 'P2 — Act This Week').sum(),
+        'p1_count':            (actioned['priority'] == 'Priority 1 - Act This Week').sum(),
+        'p2_count':            (actioned['priority'] == 'Priority 2 - Act This Week').sum(),
     }
  
     return summary
