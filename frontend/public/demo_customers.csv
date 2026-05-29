@@ -1,0 +1,501 @@
+customer_id,loyalty_tier,province,age_group,preferred_channel,gender
+C00001,Bronze,KwaZulu-Natal,55+,Web,Other
+C00002,Gold,Gauteng,18-25,In-Store,Female
+C00003,Silver,KwaZulu-Natal,55+,App,Female
+C00004,Silver,Gauteng,18-25,App,Male
+C00005,Bronze,Gauteng,26-35,App,Other
+C00006,Bronze,Gauteng,46-55,App,Female
+C00007,Bronze,Western Cape,18-25,App,Male
+C00008,Gold,Eastern Cape,55+,App,Other
+C00009,Silver,Gauteng,26-35,App,Female
+C00010,Silver,Eastern Cape,18-25,Web,Female
+C00011,Bronze,Western Cape,36-45,In-Store,Other
+C00012,Gold,KwaZulu-Natal,46-55,App,Other
+C00013,Silver,Gauteng,18-25,Web,Other
+C00014,Bronze,KwaZulu-Natal,26-35,Web,Other
+C00015,Bronze,KwaZulu-Natal,36-45,In-Store,Male
+C00016,Bronze,Gauteng,26-35,App,Other
+C00017,Bronze,Gauteng,26-35,In-Store,Female
+C00018,Bronze,Eastern Cape,36-45,App,Female
+C00019,Bronze,Limpopo,26-35,Web,Male
+C00020,Bronze,Gauteng,36-45,Web,Female
+C00021,Silver,KwaZulu-Natal,18-25,Web,Female
+C00022,Bronze,Eastern Cape,36-45,Web,Other
+C00023,Bronze,Eastern Cape,36-45,In-Store,Female
+C00024,Bronze,Limpopo,46-55,App,Male
+C00025,Bronze,KwaZulu-Natal,36-45,App,Other
+C00026,Silver,Western Cape,36-45,In-Store,Other
+C00027,Bronze,Gauteng,18-25,App,Male
+C00028,Bronze,Gauteng,46-55,Web,Other
+C00029,Silver,KwaZulu-Natal,55+,App,Other
+C00030,Bronze,KwaZulu-Natal,18-25,Web,Male
+C00031,Silver,Gauteng,18-25,In-Store,Other
+C00032,Bronze,Eastern Cape,55+,App,Male
+C00033,Bronze,KwaZulu-Natal,36-45,In-Store,Male
+C00034,Gold,Western Cape,26-35,App,Female
+C00035,Gold,Western Cape,46-55,Web,Female
+C00036,Silver,Western Cape,26-35,In-Store,Other
+C00037,Bronze,Gauteng,55+,App,Other
+C00038,Bronze,Gauteng,18-25,Web,Male
+C00039,Silver,Gauteng,18-25,In-Store,Other
+C00040,Bronze,Gauteng,46-55,In-Store,Male
+C00041,Bronze,Western Cape,18-25,App,Male
+C00042,Bronze,Western Cape,18-25,App,Other
+C00043,Bronze,Gauteng,46-55,App,Male
+C00044,Gold,KwaZulu-Natal,46-55,Web,Female
+C00045,Bronze,Gauteng,55+,App,Other
+C00046,Silver,Eastern Cape,18-25,In-Store,Female
+C00047,Bronze,Limpopo,18-25,In-Store,Other
+C00048,Bronze,Gauteng,55+,App,Male
+C00049,Bronze,Western Cape,36-45,App,Other
+C00050,Bronze,Gauteng,36-45,In-Store,Female
+C00051,Gold,Western Cape,36-45,Web,Male
+C00052,Silver,Western Cape,55+,App,Other
+C00053,Gold,Gauteng,18-25,App,Other
+C00054,Gold,Western Cape,55+,In-Store,Other
+C00055,Silver,Gauteng,55+,App,Female
+C00056,Gold,Gauteng,36-45,Web,Female
+C00057,Bronze,KwaZulu-Natal,26-35,In-Store,Other
+C00058,Bronze,Gauteng,18-25,App,Male
+C00059,Bronze,Western Cape,36-45,In-Store,Male
+C00060,Bronze,Western Cape,26-35,App,Female
+C00061,Bronze,Limpopo,26-35,App,Male
+C00062,Bronze,Gauteng,46-55,App,Female
+C00063,Silver,Western Cape,18-25,Web,Other
+C00064,Bronze,KwaZulu-Natal,26-35,Web,Female
+C00065,Bronze,Gauteng,36-45,In-Store,Female
+C00066,Bronze,Limpopo,46-55,App,Other
+C00067,Bronze,KwaZulu-Natal,18-25,App,Male
+C00068,Silver,KwaZulu-Natal,55+,Web,Female
+C00069,Bronze,KwaZulu-Natal,36-45,App,Female
+C00070,Gold,Limpopo,26-35,Web,Other
+C00071,Silver,Eastern Cape,26-35,App,Male
+C00072,Bronze,KwaZulu-Natal,36-45,In-Store,Female
+C00073,Bronze,KwaZulu-Natal,26-35,App,Other
+C00074,Silver,Gauteng,46-55,App,Female
+C00075,Silver,Gauteng,18-25,Web,Other
+C00076,Silver,Western Cape,46-55,App,Male
+C00077,Silver,Gauteng,26-35,App,Male
+C00078,Bronze,Western Cape,55+,Web,Male
+C00079,Bronze,Gauteng,18-25,In-Store,Male
+C00080,Bronze,Gauteng,18-25,In-Store,Female
+C00081,Gold,KwaZulu-Natal,36-45,Web,Female
+C00082,Silver,Eastern Cape,36-45,Web,Male
+C00083,Bronze,Gauteng,55+,Web,Male
+C00084,Bronze,Western Cape,18-25,Web,Male
+C00085,Bronze,Eastern Cape,55+,Web,Female
+C00086,Bronze,Gauteng,36-45,In-Store,Male
+C00087,Silver,KwaZulu-Natal,36-45,In-Store,Male
+C00088,Silver,Gauteng,18-25,Web,Male
+C00089,Gold,Gauteng,46-55,App,Other
+C00090,Bronze,Limpopo,26-35,Web,Male
+C00091,Bronze,Gauteng,36-45,App,Other
+C00092,Silver,KwaZulu-Natal,36-45,Web,Other
+C00093,Silver,KwaZulu-Natal,46-55,Web,Male
+C00094,Silver,Gauteng,46-55,In-Store,Other
+C00095,Silver,KwaZulu-Natal,55+,App,Male
+C00096,Bronze,Limpopo,55+,App,Female
+C00097,Bronze,Gauteng,26-35,In-Store,Female
+C00098,Bronze,Eastern Cape,26-35,In-Store,Female
+C00099,Bronze,Western Cape,18-25,In-Store,Female
+C00100,Bronze,Western Cape,55+,In-Store,Other
+C00101,Bronze,Western Cape,36-45,App,Male
+C00102,Silver,Gauteng,55+,App,Male
+C00103,Bronze,Eastern Cape,36-45,Web,Male
+C00104,Bronze,Eastern Cape,46-55,Web,Female
+C00105,Gold,Western Cape,55+,In-Store,Female
+C00106,Bronze,KwaZulu-Natal,46-55,In-Store,Male
+C00107,Bronze,Western Cape,26-35,In-Store,Female
+C00108,Silver,Western Cape,26-35,Web,Male
+C00109,Bronze,KwaZulu-Natal,18-25,Web,Male
+C00110,Bronze,Western Cape,55+,Web,Male
+C00111,Bronze,Western Cape,46-55,Web,Male
+C00112,Bronze,KwaZulu-Natal,36-45,Web,Male
+C00113,Gold,Western Cape,26-35,Web,Male
+C00114,Silver,Gauteng,26-35,Web,Male
+C00115,Silver,Gauteng,36-45,In-Store,Female
+C00116,Gold,Western Cape,46-55,In-Store,Male
+C00117,Silver,KwaZulu-Natal,46-55,In-Store,Male
+C00118,Bronze,Western Cape,55+,In-Store,Female
+C00119,Gold,KwaZulu-Natal,55+,Web,Female
+C00120,Bronze,Western Cape,18-25,App,Female
+C00121,Silver,Western Cape,26-35,Web,Male
+C00122,Gold,Gauteng,55+,App,Other
+C00123,Bronze,Western Cape,46-55,In-Store,Other
+C00124,Bronze,KwaZulu-Natal,36-45,Web,Female
+C00125,Bronze,Eastern Cape,46-55,In-Store,Other
+C00126,Bronze,Western Cape,26-35,Web,Female
+C00127,Silver,Gauteng,46-55,In-Store,Male
+C00128,Gold,Gauteng,18-25,App,Other
+C00129,Bronze,Gauteng,26-35,App,Male
+C00130,Bronze,KwaZulu-Natal,36-45,App,Other
+C00131,Bronze,Gauteng,18-25,Web,Male
+C00132,Bronze,Western Cape,26-35,App,Other
+C00133,Bronze,Western Cape,36-45,Web,Male
+C00134,Bronze,Gauteng,18-25,App,Male
+C00135,Gold,Western Cape,18-25,App,Other
+C00136,Bronze,Gauteng,26-35,Web,Male
+C00137,Bronze,Western Cape,55+,Web,Male
+C00138,Silver,Gauteng,18-25,App,Male
+C00139,Bronze,KwaZulu-Natal,18-25,Web,Other
+C00140,Gold,Gauteng,36-45,App,Other
+C00141,Gold,Limpopo,46-55,Web,Male
+C00142,Bronze,Western Cape,26-35,In-Store,Male
+C00143,Bronze,KwaZulu-Natal,26-35,In-Store,Other
+C00144,Bronze,Western Cape,55+,In-Store,Other
+C00145,Bronze,KwaZulu-Natal,55+,In-Store,Male
+C00146,Bronze,KwaZulu-Natal,26-35,In-Store,Male
+C00147,Silver,Western Cape,55+,App,Male
+C00148,Bronze,Western Cape,36-45,In-Store,Female
+C00149,Bronze,Western Cape,26-35,In-Store,Other
+C00150,Bronze,Western Cape,55+,In-Store,Female
+C00151,Gold,Gauteng,26-35,In-Store,Other
+C00152,Bronze,Gauteng,46-55,Web,Other
+C00153,Bronze,Western Cape,18-25,App,Other
+C00154,Bronze,Western Cape,26-35,In-Store,Other
+C00155,Gold,KwaZulu-Natal,18-25,In-Store,Other
+C00156,Bronze,KwaZulu-Natal,55+,In-Store,Other
+C00157,Silver,Limpopo,18-25,App,Other
+C00158,Silver,Gauteng,26-35,Web,Female
+C00159,Bronze,Gauteng,46-55,App,Male
+C00160,Silver,Gauteng,55+,Web,Male
+C00161,Bronze,Western Cape,26-35,In-Store,Female
+C00162,Silver,KwaZulu-Natal,55+,In-Store,Female
+C00163,Silver,Gauteng,36-45,App,Female
+C00164,Bronze,KwaZulu-Natal,18-25,App,Female
+C00165,Bronze,Western Cape,36-45,Web,Other
+C00166,Silver,Western Cape,26-35,Web,Male
+C00167,Bronze,Western Cape,46-55,App,Other
+C00168,Bronze,Gauteng,55+,Web,Male
+C00169,Bronze,Western Cape,18-25,App,Male
+C00170,Silver,Western Cape,55+,Web,Female
+C00171,Silver,Gauteng,26-35,App,Other
+C00172,Bronze,Western Cape,55+,App,Female
+C00173,Bronze,Gauteng,18-25,App,Other
+C00174,Bronze,Western Cape,26-35,Web,Male
+C00175,Silver,Western Cape,55+,Web,Female
+C00176,Bronze,Western Cape,46-55,Web,Female
+C00177,Silver,KwaZulu-Natal,26-35,App,Male
+C00178,Bronze,Gauteng,26-35,Web,Male
+C00179,Gold,KwaZulu-Natal,46-55,Web,Male
+C00180,Bronze,Gauteng,36-45,App,Female
+C00181,Bronze,Gauteng,18-25,In-Store,Other
+C00182,Bronze,Eastern Cape,36-45,App,Female
+C00183,Gold,Gauteng,55+,Web,Other
+C00184,Gold,Western Cape,46-55,App,Female
+C00185,Bronze,Western Cape,36-45,In-Store,Female
+C00186,Silver,Gauteng,26-35,App,Male
+C00187,Silver,Gauteng,55+,Web,Other
+C00188,Silver,Gauteng,55+,In-Store,Female
+C00189,Bronze,Eastern Cape,36-45,Web,Female
+C00190,Bronze,Western Cape,36-45,In-Store,Male
+C00191,Bronze,Gauteng,46-55,In-Store,Male
+C00192,Gold,Western Cape,18-25,App,Other
+C00193,Gold,KwaZulu-Natal,36-45,App,Female
+C00194,Silver,Gauteng,36-45,Web,Other
+C00195,Bronze,Western Cape,26-35,App,Female
+C00196,Bronze,Western Cape,55+,App,Other
+C00197,Silver,Eastern Cape,18-25,In-Store,Male
+C00198,Gold,Gauteng,26-35,App,Female
+C00199,Gold,Gauteng,46-55,In-Store,Other
+C00200,Silver,Gauteng,46-55,In-Store,Male
+C00201,Silver,Western Cape,36-45,In-Store,Male
+C00202,Bronze,Gauteng,36-45,Web,Other
+C00203,Bronze,Western Cape,46-55,Web,Female
+C00204,Gold,KwaZulu-Natal,36-45,Web,Female
+C00205,Silver,KwaZulu-Natal,18-25,In-Store,Male
+C00206,Bronze,Western Cape,36-45,Web,Female
+C00207,Bronze,Eastern Cape,55+,Web,Female
+C00208,Silver,Western Cape,36-45,App,Female
+C00209,Bronze,Western Cape,26-35,Web,Male
+C00210,Bronze,Gauteng,18-25,Web,Other
+C00211,Bronze,Limpopo,26-35,In-Store,Female
+C00212,Silver,Gauteng,26-35,In-Store,Male
+C00213,Silver,Gauteng,55+,In-Store,Male
+C00214,Bronze,Gauteng,18-25,In-Store,Other
+C00215,Silver,Western Cape,18-25,In-Store,Female
+C00216,Bronze,Gauteng,18-25,In-Store,Female
+C00217,Bronze,Gauteng,18-25,Web,Other
+C00218,Silver,Gauteng,18-25,In-Store,Other
+C00219,Silver,Gauteng,55+,In-Store,Male
+C00220,Silver,Western Cape,36-45,App,Male
+C00221,Silver,KwaZulu-Natal,26-35,Web,Other
+C00222,Silver,Gauteng,18-25,Web,Female
+C00223,Bronze,Western Cape,36-45,Web,Male
+C00224,Bronze,KwaZulu-Natal,36-45,In-Store,Male
+C00225,Bronze,Gauteng,26-35,In-Store,Female
+C00226,Bronze,Gauteng,55+,In-Store,Male
+C00227,Gold,Limpopo,46-55,App,Female
+C00228,Bronze,Western Cape,46-55,In-Store,Female
+C00229,Gold,Gauteng,36-45,App,Female
+C00230,Silver,Western Cape,26-35,Web,Other
+C00231,Silver,Gauteng,46-55,In-Store,Other
+C00232,Bronze,Western Cape,36-45,App,Other
+C00233,Silver,Gauteng,55+,App,Female
+C00234,Bronze,Gauteng,46-55,In-Store,Female
+C00235,Bronze,Gauteng,36-45,Web,Other
+C00236,Silver,Eastern Cape,36-45,Web,Male
+C00237,Bronze,KwaZulu-Natal,18-25,Web,Female
+C00238,Bronze,Gauteng,55+,App,Male
+C00239,Silver,Gauteng,18-25,App,Male
+C00240,Bronze,KwaZulu-Natal,26-35,App,Female
+C00241,Gold,Gauteng,18-25,App,Female
+C00242,Gold,Gauteng,18-25,Web,Male
+C00243,Gold,Limpopo,46-55,In-Store,Male
+C00244,Bronze,Gauteng,36-45,App,Other
+C00245,Bronze,KwaZulu-Natal,55+,App,Other
+C00246,Gold,Limpopo,18-25,Web,Female
+C00247,Bronze,Gauteng,55+,In-Store,Other
+C00248,Gold,Gauteng,18-25,In-Store,Other
+C00249,Gold,Gauteng,26-35,Web,Other
+C00250,Gold,KwaZulu-Natal,18-25,Web,Other
+C00251,Bronze,Eastern Cape,46-55,In-Store,Male
+C00252,Bronze,KwaZulu-Natal,36-45,App,Female
+C00253,Gold,Gauteng,26-35,In-Store,Other
+C00254,Bronze,KwaZulu-Natal,18-25,Web,Male
+C00255,Bronze,Eastern Cape,55+,App,Male
+C00256,Silver,Western Cape,26-35,App,Male
+C00257,Gold,Eastern Cape,26-35,Web,Other
+C00258,Silver,KwaZulu-Natal,18-25,Web,Other
+C00259,Silver,KwaZulu-Natal,26-35,Web,Female
+C00260,Bronze,Western Cape,55+,In-Store,Other
+C00261,Silver,Gauteng,26-35,In-Store,Other
+C00262,Gold,Gauteng,55+,App,Male
+C00263,Bronze,Western Cape,18-25,Web,Female
+C00264,Bronze,Gauteng,36-45,App,Other
+C00265,Gold,Eastern Cape,26-35,App,Other
+C00266,Silver,Limpopo,36-45,App,Male
+C00267,Silver,KwaZulu-Natal,55+,App,Male
+C00268,Silver,Gauteng,26-35,Web,Other
+C00269,Bronze,Gauteng,46-55,App,Female
+C00270,Bronze,Gauteng,36-45,Web,Female
+C00271,Silver,KwaZulu-Natal,26-35,Web,Male
+C00272,Silver,KwaZulu-Natal,36-45,In-Store,Male
+C00273,Gold,Eastern Cape,26-35,Web,Other
+C00274,Gold,Western Cape,18-25,In-Store,Male
+C00275,Bronze,Eastern Cape,36-45,Web,Other
+C00276,Bronze,Eastern Cape,46-55,Web,Female
+C00277,Silver,Gauteng,46-55,Web,Female
+C00278,Silver,Eastern Cape,55+,In-Store,Other
+C00279,Silver,Gauteng,26-35,In-Store,Male
+C00280,Silver,Gauteng,36-45,App,Female
+C00281,Gold,Western Cape,55+,In-Store,Male
+C00282,Bronze,Gauteng,36-45,In-Store,Female
+C00283,Bronze,Western Cape,26-35,In-Store,Other
+C00284,Bronze,Western Cape,46-55,In-Store,Other
+C00285,Silver,Western Cape,18-25,App,Other
+C00286,Bronze,Gauteng,46-55,In-Store,Female
+C00287,Bronze,Western Cape,55+,Web,Male
+C00288,Bronze,Western Cape,18-25,Web,Male
+C00289,Bronze,Western Cape,55+,In-Store,Male
+C00290,Silver,Western Cape,26-35,In-Store,Female
+C00291,Bronze,Gauteng,18-25,Web,Female
+C00292,Bronze,Western Cape,55+,Web,Female
+C00293,Silver,Gauteng,26-35,App,Female
+C00294,Bronze,Western Cape,46-55,Web,Female
+C00295,Bronze,KwaZulu-Natal,26-35,Web,Male
+C00296,Bronze,Western Cape,36-45,In-Store,Female
+C00297,Silver,Western Cape,26-35,Web,Female
+C00298,Bronze,Limpopo,26-35,App,Male
+C00299,Silver,KwaZulu-Natal,36-45,Web,Female
+C00300,Bronze,Eastern Cape,55+,In-Store,Male
+C00301,Bronze,KwaZulu-Natal,55+,In-Store,Male
+C00302,Bronze,Gauteng,26-35,Web,Other
+C00303,Bronze,Gauteng,36-45,In-Store,Other
+C00304,Silver,Western Cape,36-45,App,Other
+C00305,Silver,Gauteng,46-55,App,Other
+C00306,Gold,Western Cape,55+,Web,Female
+C00307,Bronze,Gauteng,18-25,Web,Other
+C00308,Bronze,Western Cape,55+,Web,Male
+C00309,Silver,KwaZulu-Natal,55+,In-Store,Female
+C00310,Bronze,KwaZulu-Natal,46-55,App,Other
+C00311,Bronze,Western Cape,18-25,App,Male
+C00312,Bronze,KwaZulu-Natal,46-55,In-Store,Female
+C00313,Bronze,Western Cape,18-25,App,Female
+C00314,Gold,Eastern Cape,26-35,Web,Other
+C00315,Silver,Gauteng,18-25,Web,Female
+C00316,Silver,Limpopo,46-55,Web,Male
+C00317,Bronze,KwaZulu-Natal,55+,App,Female
+C00318,Bronze,Gauteng,18-25,Web,Male
+C00319,Bronze,Gauteng,18-25,In-Store,Female
+C00320,Bronze,Western Cape,36-45,In-Store,Other
+C00321,Bronze,Gauteng,55+,App,Male
+C00322,Silver,Gauteng,26-35,In-Store,Female
+C00323,Silver,Western Cape,46-55,In-Store,Female
+C00324,Bronze,Western Cape,26-35,App,Female
+C00325,Gold,KwaZulu-Natal,55+,Web,Male
+C00326,Silver,Eastern Cape,18-25,Web,Male
+C00327,Silver,Western Cape,18-25,Web,Male
+C00328,Silver,Western Cape,55+,App,Other
+C00329,Bronze,Gauteng,18-25,In-Store,Other
+C00330,Bronze,KwaZulu-Natal,18-25,Web,Male
+C00331,Bronze,Gauteng,18-25,Web,Female
+C00332,Silver,Limpopo,46-55,App,Other
+C00333,Bronze,KwaZulu-Natal,46-55,Web,Male
+C00334,Bronze,Western Cape,36-45,App,Female
+C00335,Bronze,Gauteng,26-35,In-Store,Other
+C00336,Bronze,Eastern Cape,55+,App,Female
+C00337,Gold,KwaZulu-Natal,55+,App,Female
+C00338,Silver,Gauteng,55+,App,Female
+C00339,Bronze,Gauteng,36-45,App,Female
+C00340,Bronze,KwaZulu-Natal,46-55,In-Store,Other
+C00341,Bronze,Gauteng,36-45,In-Store,Other
+C00342,Bronze,Eastern Cape,55+,Web,Other
+C00343,Bronze,Western Cape,26-35,In-Store,Male
+C00344,Bronze,Gauteng,18-25,In-Store,Other
+C00345,Bronze,KwaZulu-Natal,46-55,Web,Female
+C00346,Silver,Gauteng,46-55,In-Store,Other
+C00347,Silver,Western Cape,36-45,App,Female
+C00348,Bronze,Gauteng,46-55,App,Male
+C00349,Bronze,Gauteng,55+,Web,Female
+C00350,Silver,Western Cape,55+,Web,Female
+C00351,Bronze,Western Cape,36-45,Web,Female
+C00352,Gold,Western Cape,55+,App,Male
+C00353,Silver,KwaZulu-Natal,26-35,In-Store,Other
+C00354,Bronze,Western Cape,36-45,App,Other
+C00355,Bronze,Gauteng,26-35,Web,Male
+C00356,Silver,Gauteng,18-25,In-Store,Female
+C00357,Bronze,Eastern Cape,26-35,In-Store,Other
+C00358,Silver,KwaZulu-Natal,18-25,App,Male
+C00359,Gold,Western Cape,18-25,Web,Other
+C00360,Silver,Gauteng,26-35,App,Male
+C00361,Bronze,Gauteng,36-45,In-Store,Female
+C00362,Silver,KwaZulu-Natal,55+,App,Other
+C00363,Bronze,Eastern Cape,55+,App,Male
+C00364,Bronze,KwaZulu-Natal,18-25,Web,Other
+C00365,Gold,KwaZulu-Natal,18-25,Web,Other
+C00366,Bronze,KwaZulu-Natal,36-45,In-Store,Other
+C00367,Gold,Gauteng,46-55,App,Other
+C00368,Gold,Western Cape,26-35,App,Male
+C00369,Bronze,Gauteng,18-25,App,Female
+C00370,Bronze,Gauteng,55+,In-Store,Male
+C00371,Bronze,Eastern Cape,36-45,In-Store,Male
+C00372,Bronze,Western Cape,26-35,Web,Male
+C00373,Bronze,Western Cape,36-45,Web,Female
+C00374,Silver,Gauteng,26-35,Web,Other
+C00375,Bronze,Gauteng,26-35,App,Other
+C00376,Bronze,Gauteng,18-25,App,Other
+C00377,Silver,Gauteng,36-45,Web,Female
+C00378,Bronze,Western Cape,36-45,App,Other
+C00379,Silver,Gauteng,55+,Web,Female
+C00380,Bronze,Western Cape,55+,In-Store,Other
+C00381,Bronze,Gauteng,18-25,Web,Other
+C00382,Silver,Gauteng,18-25,In-Store,Male
+C00383,Silver,Gauteng,46-55,App,Female
+C00384,Gold,Western Cape,55+,Web,Male
+C00385,Silver,KwaZulu-Natal,26-35,App,Male
+C00386,Silver,Western Cape,36-45,In-Store,Male
+C00387,Bronze,Western Cape,18-25,In-Store,Female
+C00388,Bronze,KwaZulu-Natal,36-45,In-Store,Female
+C00389,Silver,Gauteng,36-45,App,Other
+C00390,Silver,Gauteng,46-55,App,Male
+C00391,Gold,KwaZulu-Natal,55+,App,Other
+C00392,Bronze,Western Cape,18-25,App,Male
+C00393,Bronze,Gauteng,36-45,In-Store,Female
+C00394,Silver,Eastern Cape,18-25,In-Store,Female
+C00395,Bronze,KwaZulu-Natal,26-35,Web,Female
+C00396,Gold,Gauteng,46-55,Web,Male
+C00397,Gold,Western Cape,26-35,App,Female
+C00398,Bronze,Western Cape,18-25,In-Store,Male
+C00399,Silver,Western Cape,18-25,In-Store,Other
+C00400,Silver,Gauteng,55+,In-Store,Male
+C00401,Bronze,Gauteng,36-45,Web,Other
+C00402,Gold,Western Cape,36-45,Web,Male
+C00403,Bronze,Western Cape,26-35,In-Store,Other
+C00404,Silver,KwaZulu-Natal,46-55,In-Store,Female
+C00405,Bronze,KwaZulu-Natal,36-45,In-Store,Other
+C00406,Gold,Gauteng,55+,Web,Female
+C00407,Bronze,Western Cape,26-35,In-Store,Female
+C00408,Bronze,Gauteng,26-35,In-Store,Other
+C00409,Gold,Western Cape,55+,App,Male
+C00410,Bronze,KwaZulu-Natal,46-55,App,Male
+C00411,Bronze,Gauteng,55+,Web,Male
+C00412,Gold,Western Cape,46-55,In-Store,Male
+C00413,Gold,Gauteng,55+,In-Store,Male
+C00414,Silver,Gauteng,55+,App,Female
+C00415,Silver,Gauteng,18-25,Web,Male
+C00416,Bronze,Gauteng,26-35,App,Female
+C00417,Bronze,Limpopo,55+,App,Female
+C00418,Bronze,Western Cape,55+,App,Female
+C00419,Silver,Gauteng,36-45,App,Other
+C00420,Silver,Western Cape,26-35,In-Store,Other
+C00421,Silver,Gauteng,36-45,In-Store,Female
+C00422,Silver,Limpopo,26-35,App,Other
+C00423,Bronze,Western Cape,36-45,Web,Male
+C00424,Bronze,KwaZulu-Natal,55+,Web,Male
+C00425,Bronze,Gauteng,55+,Web,Female
+C00426,Bronze,Western Cape,18-25,Web,Male
+C00427,Bronze,Western Cape,36-45,App,Female
+C00428,Gold,KwaZulu-Natal,46-55,In-Store,Female
+C00429,Bronze,Gauteng,18-25,Web,Male
+C00430,Bronze,Gauteng,36-45,App,Other
+C00431,Bronze,Limpopo,36-45,Web,Male
+C00432,Silver,Western Cape,18-25,Web,Male
+C00433,Silver,Gauteng,55+,App,Female
+C00434,Bronze,Gauteng,36-45,In-Store,Female
+C00435,Bronze,Limpopo,55+,In-Store,Female
+C00436,Silver,Gauteng,18-25,App,Female
+C00437,Bronze,KwaZulu-Natal,55+,In-Store,Other
+C00438,Silver,KwaZulu-Natal,26-35,App,Other
+C00439,Silver,Gauteng,46-55,App,Other
+C00440,Bronze,KwaZulu-Natal,36-45,App,Female
+C00441,Bronze,Gauteng,46-55,In-Store,Female
+C00442,Gold,Gauteng,55+,App,Female
+C00443,Bronze,KwaZulu-Natal,36-45,Web,Other
+C00444,Bronze,Eastern Cape,55+,In-Store,Female
+C00445,Silver,Western Cape,26-35,In-Store,Male
+C00446,Gold,Western Cape,18-25,In-Store,Male
+C00447,Gold,Gauteng,36-45,In-Store,Female
+C00448,Silver,Gauteng,26-35,Web,Male
+C00449,Bronze,Gauteng,26-35,In-Store,Male
+C00450,Bronze,Gauteng,36-45,In-Store,Other
+C00451,Silver,Gauteng,55+,App,Female
+C00452,Silver,Gauteng,26-35,In-Store,Female
+C00453,Bronze,Gauteng,46-55,Web,Other
+C00454,Gold,Gauteng,26-35,Web,Male
+C00455,Bronze,Western Cape,55+,Web,Male
+C00456,Bronze,KwaZulu-Natal,55+,Web,Female
+C00457,Bronze,Gauteng,46-55,In-Store,Male
+C00458,Bronze,Eastern Cape,26-35,In-Store,Other
+C00459,Bronze,Eastern Cape,55+,Web,Other
+C00460,Bronze,Gauteng,36-45,Web,Female
+C00461,Bronze,KwaZulu-Natal,18-25,In-Store,Other
+C00462,Silver,Western Cape,18-25,Web,Other
+C00463,Silver,Western Cape,18-25,App,Female
+C00464,Silver,Gauteng,26-35,Web,Other
+C00465,Gold,Western Cape,46-55,Web,Other
+C00466,Bronze,Gauteng,55+,App,Other
+C00467,Bronze,Western Cape,36-45,App,Male
+C00468,Gold,Western Cape,36-45,In-Store,Female
+C00469,Bronze,KwaZulu-Natal,26-35,In-Store,Female
+C00470,Gold,Western Cape,18-25,App,Female
+C00471,Bronze,KwaZulu-Natal,26-35,App,Male
+C00472,Gold,Gauteng,46-55,In-Store,Male
+C00473,Bronze,Gauteng,46-55,Web,Female
+C00474,Gold,KwaZulu-Natal,55+,App,Male
+C00475,Bronze,Gauteng,55+,In-Store,Female
+C00476,Gold,Gauteng,46-55,Web,Male
+C00477,Bronze,Gauteng,46-55,App,Other
+C00478,Silver,Gauteng,46-55,Web,Other
+C00479,Gold,Limpopo,26-35,In-Store,Female
+C00480,Bronze,Western Cape,46-55,App,Male
+C00481,Silver,Eastern Cape,36-45,Web,Male
+C00482,Silver,Western Cape,18-25,App,Other
+C00483,Bronze,Western Cape,46-55,Web,Other
+C00484,Silver,Gauteng,18-25,In-Store,Male
+C00485,Silver,Western Cape,26-35,In-Store,Male
+C00486,Gold,Gauteng,18-25,App,Male
+C00487,Bronze,Eastern Cape,26-35,Web,Male
+C00488,Bronze,KwaZulu-Natal,36-45,App,Male
+C00489,Gold,Gauteng,26-35,App,Male
+C00490,Gold,Limpopo,26-35,Web,Female
+C00491,Bronze,KwaZulu-Natal,55+,Web,Male
+C00492,Silver,KwaZulu-Natal,46-55,Web,Other
+C00493,Bronze,Gauteng,46-55,In-Store,Female
+C00494,Bronze,Western Cape,36-45,App,Male
+C00495,Bronze,Western Cape,36-45,App,Other
+C00496,Bronze,Gauteng,46-55,In-Store,Female
+C00497,Silver,Gauteng,55+,Web,Other
+C00498,Bronze,KwaZulu-Natal,46-55,In-Store,Male
+C00499,Gold,Gauteng,55+,In-Store,Male
+C00500,Gold,Western Cape,36-45,In-Store,Male
