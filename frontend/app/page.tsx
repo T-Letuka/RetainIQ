@@ -1,12 +1,12 @@
 'use client'
 
-'use client'
 
 import { useState, useEffect, useCallback, useRef } from 'react'
 import {
   startPipeline, getStatus, getResults,
   JobStatus, PipelineResult,
 } from '../app/lib/api'
+import { ScoredCustomer } from './components/ProfitCurve'
 import UploadZone from './components/UploadZone'
 import PipelineProgress from './components/PipelineProgress'
 import ResultsDashboard from './components/ResultDashboard'
@@ -17,12 +17,44 @@ type Stage = 'upload' | 'running' | 'done' | 'error'
 const DEMO_FEATURES_URL  = '/demo/demo_features.csv'
 const DEMO_CUSTOMERS_URL = '/demo/demo_customers.csv'
 
+const API = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000'
+
 async function urlToFile(url: string, name: string): Promise<File> {
   const res  = await fetch(url)
   const blob = await res.blob()
   return new File([blob], name, { type: 'text/csv' })
 }
+async function fetchScoredCustomers(jobId: string): Promise<ScoredCustomer[]> {
+  try {
+    const res = await fetch(`${API}/api/download-scored/${jobId}`)
+    if (!res.ok) return []
 
+    const text = (await res.text()).replace(/\r/g, '')  
+    const lines = text.trim().split('\n')
+    const header = lines[0].split(',')
+
+    const probIdx    = header.findIndex(h => h.trim() === 'churn_probability')
+    const churnedIdx = header.findIndex(h => h.trim() === 'churned')
+
+    console.log('cols:', probIdx, churnedIdx)
+    if (probIdx === -1 || churnedIdx === -1) return []
+
+    const result: ScoredCustomer[] = []
+    for (const line of lines.slice(1)) {
+      if (!line.trim()) continue
+      const cols    = line.split(',')
+      const prob    = parseFloat(cols[probIdx])
+      const churned = parseInt(cols[churnedIdx], 10)
+      if (!isNaN(prob) && !isNaN(churned)) result.push({ churn_probability: prob, churned })
+    }
+
+    console.log('parsed:', result.length, result[0])
+    return result
+  } catch (e) {
+    console.error(e)
+    return []
+  }
+}
 export default function Home() {
   const [stage,         setStage        ] = useState<Stage>('upload')
   const [featuresFile,  setFeaturesFile ] = useState<File | null>(null)
@@ -32,31 +64,38 @@ export default function Home() {
   const [jobStatus,     setJobStatus    ] = useState<JobStatus | null>(null)
   const [result,        setResult       ] = useState<PipelineResult | null>(null)
   const [error,         setError        ] = useState('')
+  const [scoredCustomers , setScoredCustomers] = useState<ScoredCustomer[]>([])
   const pollRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const ready = (featuresFile !== null || demoLoaded) &&
                 (customersFile !== null || demoLoaded)
 
 
-  const poll = useCallback(async (id: string) => {
-    try {
-      const s = await getStatus(id)
-      setJobStatus(s)
+const poll = useCallback(async (id: string) => {
+  try {
+    const s = await getStatus(id)
+    setJobStatus(s)
 
-      if (s.status === 'complete') {
-        const r = await getResults(id)
-        setResult(r)
-        setStage('done')
-      } else if (s.status === 'failed') {
-        setError(s.error ?? 'Pipeline failed — check FastAPI logs')
-        setStage('error')
-      } else {
-        pollRef.current = setTimeout(() => poll(id), 1100)
-      }
-    } catch {
-      pollRef.current = setTimeout(() => poll(id), 2000)
+    if (s.status === 'complete') {
+      const r = await getResults(id)
+      setResult(r)
+
+      // fetch scored CSV for profit curve
+      const scored = await fetchScoredCustomers(id)
+      console.log('scored customers fetched:', scored.length, scored[0])
+      setScoredCustomers(scored)
+
+      setStage('done')
+    } else if (s.status === 'failed') {
+      setError(s.error ?? 'Pipeline failed — check FastAPI logs')
+      setStage('error')
+    } else {
+      pollRef.current = setTimeout(() => poll(id), 1100)
     }
-  }, [])
+  } catch {
+    pollRef.current = setTimeout(() => poll(id), 2000)
+  }
+}, [])
 
   useEffect(() => () => { if (pollRef.current) clearTimeout(pollRef.current) }, [])
 
@@ -102,6 +141,7 @@ export default function Home() {
     setResult(null)
     setError('')
   }
+
 
   return (
     <div className="min-h-screen bg-ink">
@@ -227,7 +267,7 @@ export default function Home() {
 
 
         {stage === 'done' && result && (
-          <ResultsDashboard result={result} onReset={reset} />
+          <ResultsDashboard result={result} onReset={reset}  scoredCustomers={scoredCustomers} />
         )}
 
 

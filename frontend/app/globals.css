@@ -39,7 +39,16 @@ html {
 .stagger-5 { animation-delay: 320ms; }
 .stagger-6 { animation-delay: 400ms; }
 
-.fade-up-hidden {
-  opacity: 0;
-  transform: translateY(12px);
+.animate-fade-up {
+  animation: fadeUp 0.5s ease forwards;
 }
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1;   transform: scale(1);   }
+  50%       { opacity: 0.3; transform: scale(0.7); }
+}
+ 
+.animate-pulse-dot {
+  animation: pulseDot 1.2s ease-in-out infinite;
+}
+ 

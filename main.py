@@ -242,7 +242,29 @@ def get_status(job_id: str):
         error         = job.get("error"),
     )
  
- 
+@app.get("/api/download-scored/{job_id}")
+def download_scored_csv(job_id: str):
+    """Return the scored_customers.csv for the profit curve calculation."""
+    if job_id not in JOBS:
+        raise HTTPException(404, f"Job {job_id} not found")
+
+    job = JOBS[job_id]
+    if job["status"] != "complete":
+        raise HTTPException(400, "Pipeline not complete")
+
+    csv_path = Path(job["result"]["job_dir"]) / "scored_customers.csv"
+    if not csv_path.exists():
+        raise HTTPException(404, "Scored CSV not found")
+
+    return StreamingResponse(
+        csv_path.open("rb"),
+        media_type="text/csv",
+        headers={
+            "Content-Disposition": f'attachment; filename="scored_{job_id}.csv"',
+            "Access-Control-Expose-Headers": "Content-Disposition",
+        },
+    )
+
 @app.get("/api/results/{job_id}", response_model=PipelineResult)
 def get_results(job_id: str):
     if job_id not in JOBS:
